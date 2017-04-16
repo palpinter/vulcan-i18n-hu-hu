@@ -1,7 +1,7 @@
 Package.describe({
   name: "vulcan:i18n-hu-hu",
   summary: "Vulcan i18n package (hu_HU)",
-  version: '0.0.1',
+  version: '1.0.0',
   git: "https://github.com/pal-pinter/vulcan-i18n-hu-hu.git"
 });
 
