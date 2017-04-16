@@ -1,24 +1,19 @@
 Package.describe({
-  name: 'palpinter:nova-i18n-hu-hu',
+  name: "vulcan:i18n-hu-hu",
+  summary: "Vulcan i18n package (hu_HU)",
   version: '0.0.1',
-  // Brief, one-line summary of the package.
-  summary: '',
-  // URL to the Git repository containing the source code for this package.
-  git: '',
-  // By default, Meteor will default to using README.md for documentation.
-  // To avoid submitting documentation, set this field to null.
-  documentation: 'README.md'
+  git: "https://github.com/pal-pinter/vulcan-i18n-hu-hu.git"
 });
 
-Package.onUse(function(api) {
-  api.versionsFrom('1.4.3.2');
-  api.use('ecmascript');
-  api.mainModule('nova-i18n-hu-hu.js');
-});
+Package.onUse(function (api) {
 
-Package.onTest(function(api) {
-  api.use('ecmascript');
-  api.use('tinytest');
-  api.use('palpinter:nova-i18n-hu-hu');
-  api.mainModule('nova-i18n-hu-hu-tests.js');
+  api.versionsFrom("METEOR@1.0");
+
+  api.use([
+    'vulcan:core@1.3.2'
+  ]);
+
+  api.addFiles([
+    'lib/hu_HU.js'
+  ], ["client", "server"]);
 });

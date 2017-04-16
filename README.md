@@ -1,1 +1,1 @@
-# nova-i18n-hu-hu
+Vulcan i18n hu_HU package.
